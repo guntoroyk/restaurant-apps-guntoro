@@ -8,6 +8,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     background-color: #ffffff;
+    min-height: 100vh;
 }
 
 /*
@@ -84,12 +85,15 @@ body {
 
 .hero {
     position: relative;
+    background: black;
+    overflow: hidden;
 }
 
 .hero img {
     max-height: 500px;
     width: 100%;
     object-fit: cover;
+    opacity: 0.4;
 }
 
 .hero__inner {
@@ -275,6 +279,7 @@ th {
 .menu__food__list,
 .menu__drink__list li {
     font-weight: 500;
+    font-size: 14px;
 }
 
 .restaurant_review_container {
@@ -293,12 +298,39 @@ th {
     border-radius: 8px;
     padding: 16px;
     margin: 8px;
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
     /* width: 100%; */
 }
 
 .restaurant_review_item p {
     font-weight: 500;
+    font-size: 16px;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+/*
+   Like
+*/
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #db0000;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {

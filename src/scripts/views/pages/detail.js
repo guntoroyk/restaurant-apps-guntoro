@@ -1,5 +1,6 @@
 import RestaurantSource from '../../data/restaurant-source';
 import UrlParser from '../../routes/url-parser';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 import {
     createRestaurantDetailTemplate,
     createRestaurantMenuItemTemplate,
@@ -9,10 +10,8 @@ import {
 const Detail = {
     async render() {
         return `
-            <div id="restaurant_container" class="restaurant_container">
-                <h2 class="restaurant_container__title">Restaurant Detail</h2>
-                
-            </div>
+            <div id="restaurant_container" class="restaurant_container"></div>
+            <div id="likeButtonContainer"></div>
             <div id="restaurant_menu_container" class="restaurant_menu_container">
                 <h3>Menu<h3/>
                 <table style="width:100%">
@@ -77,6 +76,11 @@ const Detail = {
         restaurant.customerReviews.forEach((review) => {
             reviewListContainer.innerHTML +=
                 createRestaurantReviewItemTemplate(review);
+        });
+
+        LikeButtonInitiator.init({
+            likeButtonContainer: document.querySelector('#likeButtonContainer'),
+            restaurant,
         });
     },
 };
