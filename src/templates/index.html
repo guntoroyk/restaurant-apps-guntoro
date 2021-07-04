@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="icon" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <title>RestoQu</title>
+</head>
+
+<body>
+    <a href="#mainContent" class="skip-link">Menuju ke konten</a>
+    <header class="app-bar">
+        <div class="app-bar__menu">
+            <button id="hamburgerButton">☰</button>
+        </div>
+        <div class="app-bar__brand">
+            <a href="#">
+                <h1>RestoQu</h1>
+            </a>
+        </div>
+        <nav id="navigationDrawer" class="app-bar__navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#/favorite">Favorite</a></li>
+                <li><a href="https://www.linkedin.com/in/guntoroyk/" target="_blank">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <img src="./images/heros/hero-image_2.jpg" alt="Restaurant Table Image">
+        <div class="hero__inner">
+            <h1 class="hero__title">Semua ada untuk kebutuhan makanmu!</h1>
+            <p class="hero__tagline">Pesan sekarang, langsung diantar. Cari makanan berkualitas kini jadi lebih mudah
+            </p>
+        </div>
+    </div>
+
+    <main id="mainContent">
+        <!-- <div class="explore">
+            <h2 class="explore__title">Explore Restaurant</h2>
+            <div class="explore__list">
+                <article class="explore__list__item">
+                    <img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/41"
+                        alt="Bring Your Phone Cafe" />
+                    <p class="explore__list__item__content__city">Kota Bandung</p>
+                    <div class="explore__list__item__content">
+                        <p class="">Rating: 4.5 </p>
+                        <h3 class="explore__list__item__content__title"><a href="">Bring Your Phone Cafe</a></h3>
+                        <p class="explore__list__item__content__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                            justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                            ante,
+                            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.
+                        </p>
+                    </div>
+                </article>
+                <article class="explore__list__item">
+                    <img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/07" alt="Run The Gun" />
+                    <p class="explore__list__item__content__city">Kota Bandung</p>
+                    <div class="explore__list__item__content">
+                        <p class="">Rating: 4.5 </p>
+                        <h3 class="explore__list__item__content__title"><a href="">Run The Gun</a></h3>
+                        <p class="explore__list__item__content__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                            justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                            ante,
+                            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.
+                        </p>
+                    </div>
+                </article>
+                <article class="explore__list__item">
+                    <img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/29"
+                        alt="Pangsit Express" />
+                    <p class="explore__list__item__content__city">Kota Bandung</p>
+                    <div class="explore__list__item__content">
+                        <p class="">Rating: 4.5 </p>
+                        <h3 class="explore__list__item__content__title"><a href="">Pangsit Express</a></h3>
+                        <p class="explore__list__item__content__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                            justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                            ante,
+                            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.
+                        </p>
+                    </div>
+                </article>
+                <article class="explore__list__item">
+                    <img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/38" alt="Ducky Duck" />
+                    <p class="explore__list__item__content__city">Kota Bandung</p>
+                    <div class="explore__list__item__content">
+                        <p class="">Rating: 4.5 </p>
+                        <h3 class="explore__list__item__content__title"><a href="">Ducky Duck</a></h3>
+                        <p class="explore__list__item__content__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                            justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                            ante,
+                            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.
+                        </p>
+                    </div>
+                </article>
+                <article class="explore__list__item">
+                    <img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/40" alt="Kafein" />
+                    <p class="explore__list__item__content__city">Kota Bandung</p>
+                    <div class="explore__list__item__content">
+                        <p class="">Rating: 4.5 </p>
+                        <h3 class="explore__list__item__content__title"><a href="">Kafein</a></h3>
+                        <p class="explore__list__item__content__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                            justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                            ante,
+                            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.
+                        </p>
+                    </div>
+                </article>
+                <article class="explore__list__item">
+                    <img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/08" alt="Makan mudah" />
+                    <p class="explore__list__item__content__city">Kota Bandung</p>
+                    <div class="explore__list__item__content">
+                        <p class="">Rating: 4.5 </p>
+                        <h3 class="explore__list__item__content__title"><a href="">Makan mudah</a></h3>
+                        <p class="explore__list__item__content__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                            justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                            ante,
+                            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.
+                        </p>
+                    </div>
+                </article>
+                <article class="explore__list__item">
+                    <img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/32" alt="Saya Suka" />
+                    <p class="explore__list__item__content__city">Kota Bandung</p>
+                    <div class="explore__list__item__content">
+                        <p class="">Rating: 4.5 </p>
+                        <h3 class="explore__list__item__content__title"><a href="">Saya Suka</a></h3>
+                        <p class="explore__list__item__content__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                            justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                            ante,
+                            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.
+                        </p>
+                    </div>
+                </article>
+                <article class="explore__list__item">
+                    <img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/45" alt="Gigitan Cepat" />
+                    <p class="explore__list__item__content__city">Kota Bandung</p>
+                    <div class="explore__list__item__content">
+                        <p class="">Rating: 4.5 </p>
+                        <h3 class="explore__list__item__content__title"><a href="">Gigitan Cepat</a></h3>
+                        <p class="explore__list__item__content__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                            justo,
+                            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+                            ante,
+                            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div> -->
+    </main>
+
+    <footer>
+        <p>Copyright © 2021 - RestoQu</p>
+    </footer>
+</body>
+
+</html>
