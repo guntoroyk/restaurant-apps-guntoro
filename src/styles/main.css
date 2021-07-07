@@ -36,7 +36,7 @@ body {
     background-color: transparent;
     border: none;
     font-size: 18px;
-    padding: 8px;
+    padding: 16px;
     cursor: pointer;
 }
 
@@ -76,7 +76,7 @@ body {
     display: inline-block;
     text-decoration: none;
     color: black;
-    padding: 8px;
+    padding: 16px;
     margin-bottom: 5px;
     width: 100%;
 }
