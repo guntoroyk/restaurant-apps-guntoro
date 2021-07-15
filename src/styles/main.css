@@ -271,13 +271,13 @@ th {
     background-color: #dddddd;
 }
 
-.menu__food__list,
+/* .menu__food__list,
 .menu__drink__list {
     list-style-type: none;
-}
+} */
 
 .menu__food__list,
-.menu__drink__list li {
+.menu__drink__list {
     font-weight: 500;
     font-size: 14px;
 }

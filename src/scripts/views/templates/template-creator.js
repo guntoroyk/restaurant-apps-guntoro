@@ -32,7 +32,7 @@ const createRestaurantItemTemplate = (restaurant) => `
   `;
 
 const createRestaurantMenuItemTemplate = (menu) => `
-        <li>${menu.name}</li>
+        <div>${menu.name}</div>
 `;
 
 const createRestaurantReviewItemTemplate = (review) => `

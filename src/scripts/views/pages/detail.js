@@ -20,15 +20,11 @@ const Detail = {
                         <th>Drink</th>
                     </tr>
                     <tr>
-                        <td>
-                           <ul id="menu__food__list" class="menu__food__list">
-                               
-                           </ul>
+                        <td id="menu__food__list" class="menu__food__list">
+                           
                         </td>
-                        <td>
-                            <ul id="menu__drink__list" class="menu__drink__list">
-                               
-                           </ul>
+                        <td id="menu__drink__list" class="menu__drink__list">
+                          
                         </td>
                     </tr>
                 </table>
@@ -64,9 +60,9 @@ const Detail = {
 
         const menuDrinkContainer = document.querySelector('#menu__drink__list');
 
-        restaurant.menus.foods.forEach((food) => {
+        restaurant.menus.drinks.forEach((drink) => {
             menuDrinkContainer.innerHTML +=
-                createRestaurantMenuItemTemplate(food);
+                createRestaurantMenuItemTemplate(drink);
         });
 
         const reviewListContainer = document.querySelector(
