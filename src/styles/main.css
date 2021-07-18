@@ -48,6 +48,7 @@ body {
 .app-bar .app-bar__brand a {
     text-decoration: none;
     cursor: pointer;
+    padding: 16px;
 }
 
 .app-bar .app-bar__brand h1 {
