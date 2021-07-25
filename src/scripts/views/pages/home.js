@@ -14,7 +14,7 @@ const Home = {
       </div>
       <div class="explore">
         <h2 class="explore__title">Explore Restaurant</h2>
-        <div id="explore__list" class="explore__list">
+        <div id="restaurants" class="restaurants">
 
         </div>
       </div>
@@ -26,7 +26,7 @@ const Home = {
         const restaurants = await RestaurantSource.restaurantList();
 
         console.log('restaurants', restaurants);
-        const restaurantContainer = document.querySelector('#explore__list');
+        const restaurantContainer = document.querySelector('#restaurants');
 
         restaurants.forEach((restaurant) => {
             restaurantContainer.innerHTML +=

@@ -15,17 +15,21 @@ const createRestaurantDetailTemplate = (restaurant) => `
 `;
 
 const createRestaurantItemTemplate = (restaurant) => `
-  <article class="explore__list__item">
-    <img src="${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}"
-        alt="${restaurant.name}" />
-    <p class="explore__list__item__content__city">${restaurant.city}</p>
-    <div class="explore__list__item__content">
-        <p class="">Rating: ${restaurant.rating} </p>
-        <h3 class="explore__list__item__content__title"><a href="${`/#/detail/${restaurant.id}`}">${
-    restaurant.name
+  <article class="restaurant-item">
+    <img src="${
+        restaurant.pictureId
+            ? `${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}`
+            : 'https://picsum.photos/id/666/800/450?grayscale'
+    }"
+        alt="${restaurant.name || '-'}" />
+    <p class="restaurant-item__content__city">${restaurant.city || '-'}</p>
+    <div class="restaurant-item__content">
+        <p class="">Rating: ${restaurant.rating || '-'} </p>
+        <h3 class="restaurant__name"><a href="${`/#/detail/${restaurant.id}`}">${
+    restaurant.name || '-'
 }</a></h3>
-        <p class="explore__list__item__content__desc">${
-            restaurant.description
+        <p class="restaurant-item__content__desc">${
+            restaurant.description || '-'
         }</p>
     </div>
   </article>
