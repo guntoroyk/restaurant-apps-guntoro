@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 import * as TestFactories from './helpers/testFactories';
-import LikeButtonInitiator from '../src/scripts/utils/like-button-presenter';
 import FavoriteRestaurantIdb from '../src/scripts/data/restaurant-idb';
 
 describe('Liking A Restaurant', () => {
@@ -26,12 +25,7 @@ describe('Liking A Restaurant', () => {
   });
 
   it('should be able to like the restaurant', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({id: 1});
 
     document.querySelector('#likeButton').dispatchEvent(new Event('click'));
 
