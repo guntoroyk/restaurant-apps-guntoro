@@ -16,12 +16,12 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
   <article class="restaurant-item">
-    <img src="${
+    <img class="lazyload" src="./images/placeholder.jpg" data-src="${
         restaurant.pictureId
             ? `${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}`
             : 'https://picsum.photos/id/666/800/450?grayscale'
     }"
-        alt="${restaurant.name || '-'}" />
+        alt="${restaurant.name || '-'}" width="200px" height="90px" />
     <p class="restaurant-item__content__city">${restaurant.city || '-'}</p>
     <div class="restaurant-item__content">
         <p class="">Rating: ${restaurant.rating || '-'} </p>
