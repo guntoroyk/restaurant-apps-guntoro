@@ -53,7 +53,10 @@ module.exports = {
                 ImageminPngquant(),
             ],
         }),
-        new BundleAnalyzerPlugin(),
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'static',
+            openAnalyzer: false,
+        }),
     ],
     optimization: {
         splitChunks: {

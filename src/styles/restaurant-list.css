@@ -1,0 +1,75 @@
+/* Restaurant List */
+
+.explore {
+    margin-top: 8px;
+    padding: 16px;
+}
+.explore__title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.restaurants {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.restaurant-search-input {
+    /* width: 100%; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* margin-left: 32px; */
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.restaurant-item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius: 16px;
+    margin: 8px;
+    max-width: 300px;
+}
+
+.restaurant-item img {
+    height: 200px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+}
+
+.restaurant-item__content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.restaurant-item__content__city {
+    background-color: #00000080;
+    color: #ffffff;
+    padding: 8px;
+}
+
+.restaurant__name {
+    margin: 16px 0px;
+}
+
+.restaurant__name a {
+    text-decoration: none;
+    color: #000000;
+    padding: 16px 0px;
+}
+
+.restaurant-item__content__desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}

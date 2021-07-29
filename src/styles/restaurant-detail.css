@@ -1,0 +1,115 @@
+/* Restaurant Detail */
+
+.restaurant_container {
+    margin-top: 8px;
+    padding: 16px;
+}
+
+.restaurant_container__title {
+    text-align: center;
+}
+
+.restaurant {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px 16px;
+}
+
+.restaurant_container .favorite-btn {
+    background: transparent;
+    border: solid black 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.restaurant_container .favorite-btn:hover {
+    background: black;
+    color: white;
+}
+
+.restaurant_container .restaurant__image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.restaurant_container .restaurant__title {
+    margin-bottom: 8px;
+}
+
+.restaurant_container .restaurant__info h3 {
+    margin: 8px 0;
+}
+.restaurant_container .restaurant__info h4 {
+    margin: 8px 0;
+}
+
+.restaurant_menu_container {
+    margin-top: 8px;
+    padding: 16px;
+}
+
+.restaurant_menu_container h3 {
+    margin-bottom: 8px;
+}
+
+.restaurant_menu_container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.restaurant_menu_container td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.restaurant_menu_container tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+.menu__food__list,
+.menu__drink__list {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.restaurant_review_container {
+    margin-top: 8px;
+    padding: 16px;
+}
+
+.restaurant_review_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurant_review_item {
+    border: solid black 1px;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.restaurant_review_item p {
+    font-weight: 500;
+    font-size: 16px;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}

@@ -30,7 +30,6 @@ const Home = {
         // Fungsi ini akan dipanggil setelah render()
         const restaurants = await RestaurantSource.restaurantList();
 
-        console.log('restaurants', restaurants);
         const restaurantContainer = document.querySelector('#restaurants');
 
         restaurants.forEach((restaurant) => {

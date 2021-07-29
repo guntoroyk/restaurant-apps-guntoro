@@ -44,7 +44,6 @@ const Detail = {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
 
         const restaurant = await RestaurantSource.restaurantDetail(url.id);
-        console.log('restaurant', restaurant);
         const restaurantDetailContainer = document.querySelector(
             '#restaurant_container'
         );
